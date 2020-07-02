@@ -1,19 +1,3 @@
-// setTimeout(start, 1000);
-// var i = 0;
-// var num = document.getElementById('rides');
-
-// const start = () => {
-//     setInterval(increase, 1000);
-// };
-
-// function increase() {
-//     if (i < 6844) 
-//     {
-//         i++;
-//         num.innerText = i;
-//     }
-// }
-
 var countRiders = 0;
 var countRides = 0;
 var countDistance = 0;
@@ -45,4 +29,34 @@ setTimeout(function(){
         }
     },10)
 },100);
+
+function locateImg() {
+    document.getElementById('icos-mobile-para').innerHTML = "Locate your nearest Icos in your campus";
+    document.getElementById('pulse1').style.backgroundColor = '#4592af';
+    document.getElementById('pulse2').style.backgroundColor = 'transparent';
+    document.getElementById('pulse3').style.backgroundColor = 'transparent';
+    document.getElementById('locate').style.display='block';
+    document.getElementById('scan').style.display='none';
+    document.getElementById('ride').style.display='none';
+   }
+
+   function scanImg() {
+    document.getElementById('icos-mobile-para').innerHTML = "Scan the QR to get an Icos started";
+    document.getElementById('pulse1').style.backgroundColor = 'transparent';
+    document.getElementById('pulse2').style.backgroundColor = '#4592af';
+    document.getElementById('pulse3').style.backgroundColor = 'transparent';
+    document.getElementById('locate').style.display='none';
+    document.getElementById('scan').style.display='block';
+    document.getElementById('ride').style.display='none';
+   }
+
+   function rideImg() {
+    document.getElementById('icos-mobile-para').innerHTML = "Zoom around your campus at just ₹1/min";
+    document.getElementById('pulse1').style.backgroundColor = 'transparent';
+    document.getElementById('pulse2').style.backgroundColor = 'transparent';
+    document.getElementById('pulse3').style.backgroundColor = '#4592af';
+    document.getElementById('locate').style.display='none';
+    document.getElementById('scan').style.display='none';
+    document.getElementById('ride').style.display='block';
+  }
 

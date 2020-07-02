@@ -12,6 +12,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
  
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/aeaca870f5.js" crossorigin="anonymous"></script>
@@ -180,6 +181,19 @@
     </div>
     </section>
 
+    <!-- Download App -->
+    <section id="download">
+      <div class="download-container">
+        <div class="download-heading">
+          <h1>Loved us? Try us out then!</h1>
+        </div>
+        <div class="download-buttons">
+          <a><img class="download-btn" src="images/google-play.png" alt="google-play"></a>
+          <a><img class="download-btn" src="images/app-store.png" alt="google-play"></a>
+        </div>
+      </div>
+    </section>
+   
     <!-- Pricing -->
     <section id="pricing">
 
@@ -240,6 +254,50 @@
         </div>
     
       </section>
+
+    <!-- Mobile Animation -->
+    <div class="icos-mobile">
+      <div class="container icos-mobile-container" >
+         <div class="icos-mobile-progress progress-a" ></div>
+         <div class="base_band_header icos-mobile-copy_wrap revealed" >
+            <h6 class="typo_header icos-mobile-section_title typo_header-display_block typo_header-variant_7"><span id="demo" class="text_crop">How to Use Icos</span></h6>
+            <h1 class="typo_header icos-mobile-section_headline typo_header-variant_1"><span class="text_crop">Simple, accessible micromobility for all.</span></h1>
+         </div>
+         <div class="icos-mobile-content_wrap" >
+            <div class="icos-mobile-steps_list" >
+               <div class="step_item" >
+                  <div id="pulse1" class="pulse" onclick="locateImg()"></div>
+                  <h3 class="typo_header step_name typo_header-variant_3" ><span class="text_crop">Locate</span></h3>
+               </div>
+               <div class="step_separator" ></div>
+               <div class="step_item" >
+                  <div id="pulse2" class="pulse" onclick="scanImg()"></div>
+                  <h3 class="typo_header step_name typo_header-variant_3" ><span class="text_crop">Scan</span></h3>
+               </div>
+               <div class="step_separator" ></div>
+               <div class="step_item active" >
+                  <div id="pulse3" class="pulse" onclick="rideImg()"></div>
+                  <h3 class="typo_header step_name typo_header-variant_3" ><span class="text_crop">Ride</span></h3>
+               </div>
+            </div>
+
+            <img id="locate" class="phone-img" src="images/Capture.PNG" style="display: block;">
+            <img id="scan" class="phone-img" src="images/Capture1.PNG" style="display: none;">
+            <img id="ride" class="phone-img" src="images/Capture3.PNG" style="display: none;">
+          
+            <div class="icos-mobile-steps_content" >
+               <div class="wrap">
+                  <h2 class="typo_header icos-mobile-steps_name typo_header-variant_2"><span class="text_crop">Ride</span></h2>
+                  <div class="icos-mobile-steps_description">
+                     <div class="base_rich_text">
+                        <p id="icos-mobile-para">Locate your nearest Icos in your campus</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 
     <script src="js/index.js"></script>
 </body>
